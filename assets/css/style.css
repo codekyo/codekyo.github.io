@@ -15,7 +15,7 @@ p {
 	font-size: 1em;
 	text-align: center;
 	position: relative;
-	top: 0.6em;
+	top: 1.5em;
 }
 
 /* Original CSS */
@@ -78,7 +78,7 @@ h2 {
 	font-size:1.5em;
 	line-height:2em;
 	margin-top:1em;
-	margin-bottom:1em
+	margin-bottom:1emgi
 }
 h3 {
 	font-size:1.17em;
@@ -108,7 +108,7 @@ mark {
 	background:#ff0;
 	color:#000
 }
-p,pre {
+p {
 	margin:1.5em 0
 }
 small {
@@ -378,7 +378,7 @@ th:last-child {
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
-	padding:20px;
+	padding:10px;
 	background:#343642;
 	color:#C1C2C3
 }
@@ -775,7 +775,6 @@ dd {
 	font-family:"Open Sans",Helvetica,Arial,sans-serif;
 	font-weight:700;
 	font-size:.9em;
-	text-transform:uppercase;
 	text-align:center
 }
 .postNav .prev img,.postNav .next img {
@@ -896,9 +895,17 @@ dd {
 }
 .posts li .date {
 	color:gray;
-	font-family:"Open Sans",Helvetica,Arial,sans-serif;
+	font-family:"Libre Baskerville",Georgia,Times,serif;
 	font-weight:300;
 	font-size:.8em
+}
+.posts li .categories {
+	color:gray;
+	font-family:"Libre Baskerville",Georgia,Times,serif;
+	font-weight:300;
+	font-size:.8em;
+	position: relative;
+	float: right;
 }
 .posts li .adate {
 	color:black;
@@ -909,6 +916,8 @@ dd {
 .posts li h3 {
 	margin:0 0 .5em
 }
+
+/* Mobile CSS */
 @media only screen and (min-width:800px) {
 	.content {
 		padding-top:0;

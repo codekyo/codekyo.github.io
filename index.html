@@ -7,11 +7,13 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <span class="categories">{% if post.categories.size > 0 %} {{ post.categories | array_to_sentence_string | prepend: 'On ' }}.{% endif %}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
       </li>
     {% endfor %}
   </ul>
+
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
@@ -21,4 +23,16 @@ layout: default
       <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
     {% endif %}
   </div>
+
+  <!-- Adsense -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3055500016021139"
+       data-ad-slot="6916658001"
+       data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
 </div>

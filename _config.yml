@@ -24,4 +24,13 @@ social:
    facebook: brennan.k.brown
    email: mail@codekyo.me
 
-google_analytics: "UA-58263416-1"
+google_analytics: "UA-54919711-2"
+
+categories:
+  - Frontend
+  - Backend
+  - High-level
+  - Low-level
+  - Science
+  - Math
+  - Beginners's Guide
